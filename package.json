@@ -1,0 +1,19 @@
+{
+  "name": "marketplace-listing-cutover-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx tests/order_handoff.test.ts",
+    "run:sample": "node --import tsx src/marketplace_cutover.ts"
+  },
+  "dependencies": {
+    "openai": "^4.56.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
